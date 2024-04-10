@@ -10,7 +10,7 @@ from langchain.vectorstores import FAISS
 from langchain.llms import OpenAI
 from langchain.memory import ConversationBufferMemory
 from langchain.chains import RetrievalQA
-import pyperclip
+# import pyperclip
 from langchain.schema import (
     SystemMessage,
     HumanMessage,
