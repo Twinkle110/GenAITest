@@ -199,12 +199,12 @@ def app():
             st.write(user_template.replace("{{MSG}}", message.content), unsafe_allow_html=True)
         else:
             st.write(bot_template.replace("{{MSG}}", message.content), unsafe_allow_html=True)
-            copy_button_id = f"copy_button_{i}"
-            if st.button("Copy", key=copy_button_id):
-               copy_to_clipboard(message.content)
+#             copy_button_id = f"copy_button_{i}"
+#             if st.button("Copy", key=copy_button_id):
+#                copy_to_clipboard(message.content)
 
-def copy_to_clipboard(content):
-    pyperclip.copy(content)
+# def copy_to_clipboard(content):
+#     pyperclip.copy(content)
                      
 if __name__ == '__main__':
    app()
